@@ -1,5 +1,6 @@
-Hyperskill Project: Electronic queue for the case service center
-Django: basic class-based views, POST processing, bootstrap for templates
+Hyperskill Project: Electronic queue for the car service center
+
+Django: basic class-based views, bootstrap for templates
 Queue: decided to create singleton class with the method to save it's state with pickle serialization
 
 Project:
