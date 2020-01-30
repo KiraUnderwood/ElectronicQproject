@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Service name</th>
+      <th scope="col">Number or requests in a q</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Change oil queue</td>
+      <td>{{oil}}</td>
+    </tr>
+    <tr>
+      <td>Inflate tires queue</td>
+      <td>{{tires}}</td>
+    </tr>
+    <tr>
+      <td>Get diagnostic queue</td>
+      <td>{{diag}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<form method="post">{% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-lg active ml-5">Process next</button>
+</form>
+
+
+
+<a href="/" class="mb-5 justify-content-center">Back to home page</a>
+
+{%endblock%}

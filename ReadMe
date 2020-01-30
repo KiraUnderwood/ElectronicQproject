@@ -1,0 +1,9 @@
+Hyperskill Project: Electronic queue for the case service center
+Django: basic class-based views, POST processing, bootstrap for templates
+Queue: decided to create singleton class with the method to save it's state with pickle serialization
+
+Project:
+- create 2 views for customer and operator
+- customer should be able to get a ticket and know the expected queuing time (based on certain service order)
+- operator should be able to press the button by which popping the next ticket from the queue
+and receive the message about which ticket is next

@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+{%block content%}
+
+<h2 class="mb-5">Welcome to the Hypercar Service!</h2>
+
+<div class="d-flex justify-content-center m-5">
+    <p class="lead">Customer's view:</p>
+    <a href="{% url 'menu' %}" class="btn btn-primary btn-lg active ml-2" role="button" aria-pressed="true">Get a ticket</a>
+</div>
+<div class="d-flex justify-content-center m-5">
+    <p class="lead">Operator's view:</p>
+    <a href="{% url 'processing' %}" class="btn btn-primary btn-lg active ml-2" role="button" aria-pressed="true">Process the request</a>
+</div>
+{%endblock%}

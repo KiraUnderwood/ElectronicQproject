@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+{% if ticket_number %}
+<div><h2 class="mb-5">Next ticket #{{ticket_number}}</h2></div>
+{%else%}
+<div><h2 class="mb-5">Waiting for the next client</h2></div>
+{%endif%}
+
+<div class="d-flex justify-content-center m-5">
+   <button type="button" class="btn btn-outline-success ml-2">
+          <a href="{% url 'processing' %}">Back to menu</a>
+   </button>
+</div>
+
+<a href="/" class="mb-5 justify-content-center">Back to home page</a>
+
+
+{%endblock%}
