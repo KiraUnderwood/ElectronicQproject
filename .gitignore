@@ -1,2 +1,4 @@
 db.sqlite3
 tickets/migrations*
+hypercar/__pycache__/*
+tickets/__pycache__/*
